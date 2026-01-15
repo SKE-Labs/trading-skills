@@ -147,7 +147,7 @@ We welcome contributions! To add a new skill:
 ## 🔗 Related Links
 
 - **Embient Platform**: [embient.ai](https://embient.ai)
-- **More Skills**: Browse the full marketplace at [embient.ai/skills](https://embient.ai/marketplace)
+- **More Skills**: Browse the full marketplace at [embient.ai/marketplace](https://embient.ai/marketplace)
 - **Documentation**: [docs.embient.ai](https://docs.embient.ai)
 
 ---
