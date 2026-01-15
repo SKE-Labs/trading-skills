@@ -1,0 +1,77 @@
+---
+name: optimal-trade-entry
+description: Execute Optimal Trade Entry (OTE) using Fibonacci retracement between 62-79%. Use when entering after structure breaks, timing entries on pullbacks, or finding high-probability retracement levels.
+---
+
+# Optimal Trade Entry (OTE)
+
+OTE is the sweet spot retracement zone (62%-79% Fib) where smart money typically enters positions.
+
+## The OTE Zone
+
+| Fib Level | Significance             |
+| --------- | ------------------------ |
+| 61.8%     | Start of OTE zone        |
+| 70.5%     | Midpoint (CE equivalent) |
+| 79%       | End of OTE zone          |
+
+The 62-79% zone balances:
+
+- Deep enough for good R:R
+- Not so deep that you're caught in reversal
+
+## When to Use OTE
+
+1. **After BOS/CHoCH** - Pullback entry in new direction
+2. **After liquidity sweep** - Retracement entry
+3. **During trending moves** - Continuation entries
+
+## Entry Workflow
+
+### Step 1: Identify the Impulse
+
+- Find a strong impulsive move (displacement)
+- Must have clear swing low to swing high (or vice versa)
+
+### Step 2: Draw Fibonacci
+
+Use `get_candles_around_date` to get exact swing points, then:
+
+- **Bullish**: Draw from swing low to swing high
+- **Bearish**: Draw from swing high to swing low
+
+### Step 3: Mark OTE Zone
+
+- Zone between 61.8% and 79%
+- Use `draw_on_chart` with `demand`/`supply` type
+
+### Step 4: Enter at OTE
+
+- Set limit order at 70.5% (midpoint) OR
+- Wait for price action confirmation in zone
+
+### Step 5: Stop & Target
+
+- **Stop loss**: Beyond the 100% (swing point)
+- **Target**: Extension levels (1.27, 1.618, 2.0)
+
+## OTE + Confluence
+
+Best entries combine OTE with:
+
+- Order block in the zone
+- Fair value gap in the zone
+- Previous structure level
+
+## Example R:R Calculation
+
+Entry at 70% retracement:
+
+- Stop at 100% = 30% of move risked
+- Target at 0% = 70% profit
+- **R:R = 2.33:1** minimum
+
+Targeting extensions:
+
+- -27% extension = 97% profit = **3.23 R:R**
+- -62% extension = 132% profit = **4.4 R:R**
