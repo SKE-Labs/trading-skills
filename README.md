@@ -7,6 +7,7 @@ These skills enable AI-powered trading assistants to understand market concepts,
 [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-50-green.svg)](#skill-categories)
 [![Embient](https://img.shields.io/badge/platform-Embient.ai-purple.svg)](https://embient.ai)
+[![GitHub Stars](https://img.shields.io/github/stars/ske-labs/trading-skills?style=social)](https://github.com/ske-company/trading-skills)
 
 ---
 
@@ -25,15 +26,15 @@ Each skill is a standalone markdown file with clear instructions, formulas, and 
 
 ## 📁 Skill Categories
 
-| Category | Skills | Description |
-|----------|--------|-------------|
-| [**ICT/Smart Money**](skills/ict-smart-money) | 8 | Institutional trading concepts—order blocks, FVGs, liquidity |
-| [**Technical Strategies**](skills/technical-strategies) | 10 | Indicator-based strategies—MACD, RSI, Fibonacci, VWAP |
-| [**Chart Patterns**](skills/chart-patterns) | 8 | Classical patterns—head & shoulders, triangles, flags |
-| [**Risk Management**](skills/risk-management) | 8 | Position sizing, stop losses, drawdown management |
-| [**Day Trading**](skills/day-trading) | 6 | Intraday strategies—scalping, breakouts, momentum |
-| [**Fundamental Analysis**](skills/fundamental-analysis) | 5 | Earnings, sentiment, economic calendar trading |
-| [**Crypto Trading**](skills/crypto-trading) | 5 | Crypto-specific—on-chain analysis, funding rates, DCA |
+| Category                                                | Skills | Description                                                  |
+| ------------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| [**ICT/Smart Money**](skills/ict-smart-money)           | 8      | Institutional trading concepts—order blocks, FVGs, liquidity |
+| [**Technical Strategies**](skills/technical-strategies) | 10     | Indicator-based strategies—MACD, RSI, Fibonacci, VWAP        |
+| [**Chart Patterns**](skills/chart-patterns)             | 8      | Classical patterns—head & shoulders, triangles, flags        |
+| [**Risk Management**](skills/risk-management)           | 8      | Position sizing, stop losses, drawdown management            |
+| [**Day Trading**](skills/day-trading)                   | 6      | Intraday strategies—scalping, breakouts, momentum            |
+| [**Fundamental Analysis**](skills/fundamental-analysis) | 5      | Earnings, sentiment, economic calendar trading               |
+| [**Crypto Trading**](skills/crypto-trading)             | 5      | Crypto-specific—on-chain analysis, funding rates, DCA        |
 
 ---
 
@@ -50,12 +51,12 @@ Each skill is a standalone markdown file with clear instructions, formulas, and 
 
 These skills work with any AI coding agent that supports the skills format:
 
-| Agent | Setup |
-|-------|-------|
-| **Claude Code** | Add to `.claude/skills/` directory |
-| **Antigravity** | Add to `.agent/skills/` directory |
-| **Cursor** | Add to `.cursor/skills/` directory |
-| **Other agents** | Point to the `skills/` folder |
+| Agent            | Setup                              |
+| ---------------- | ---------------------------------- |
+| **Claude Code**  | Add to `.claude/skills/` directory |
+| **Antigravity**  | Add to `.agent/skills/` directory  |
+| **Cursor**       | Add to `.cursor/skills/` directory |
+| **Other agents** | Point to the `skills/` folder      |
 
 ```bash
 git clone https://github.com/ske-company/trading-skills.git
@@ -70,7 +71,6 @@ Each skill follows a consistent structure in `SKILL.md`:
 name: skill-name
 description: When to use this skill
 ---
-
 # Skill Title
 [Detailed instructions, formulas, workflows]
 ```
@@ -80,17 +80,20 @@ description: When to use this skill
 ## 📚 Featured Skills
 
 ### ICT/Smart Money Concepts
+
 - **Order Blocks** — Institutional buy/sell zones for high-probability entries
 - **Fair Value Gaps** — Imbalances in price for retracement targets
 - **Liquidity Zones** — Where stop losses cluster for smart money sweeps
 - **Market Structure Shift** — Trend reversal confirmation signals
 
 ### Risk Management
+
 - **Position Sizing** — Fixed %, ATR-based, and Kelly criterion methods
 - **Stop Loss Strategies** — Technical, volatility, and time-based stops
 - **Drawdown Management** — Recovery protocols and loss limits
 
 ### Technical Strategies
+
 - **Fibonacci Trading** — Retracements and extensions for entries/targets
 - **Multi-Timeframe Analysis** — HTF bias with LTF precision entries
 - **VWAP Trading** — Volume-weighted levels for intraday trading
@@ -112,15 +115,19 @@ description: Brief description for skill selection
 # Skill Title
 
 ## Identification / Setup
+
 How to identify the pattern or setup
 
 ## Entry Strategy
+
 Step-by-step entry workflow
 
 ## Risk Management
+
 Stop loss and position sizing rules
 
 ## Best Practices
+
 Do's and don'ts
 ```
 
