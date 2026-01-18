@@ -1,6 +1,10 @@
 ---
 name: candlestick-patterns
 description: Identify key reversal and continuation candlestick patterns. Use when timing entries/exits, confirming price action signals, or finding reversal confirmation at key levels.
+license: Apache-2.0
+metadata:
+  author: ske-labs
+  version: "1.0"
 ---
 
 # Candlestick Pattern Trading
@@ -84,3 +88,7 @@ Candlestick patterns provide visual entry/exit signals based on price action psy
 - Combine with other confluence
 - Higher timeframe patterns are stronger
 - Confirmation (next candle) reduces false signals
+
+## Reference
+
+See [references/PATTERNS.md](references/PATTERNS.md) for visual pattern diagrams.

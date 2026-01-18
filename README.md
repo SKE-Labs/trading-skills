@@ -2,16 +2,13 @@
 
 A curated collection of **50 trading skills** designed for AI agents. Built for [Embient.ai](https://embient.ai), but compatible with any agent that supports skills—including **Claude Code**, **Antigravity**, **Cursor**, and more.
 
-These skills enable AI-powered trading assistants to understand market concepts, analyze charts, manage risk, and generate actionable trading insights.
-
 [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-50-green.svg)](#skill-categories)
 [![Embient](https://img.shields.io/badge/platform-Embient.ai-purple.svg)](https://embient.ai)
-[![GitHub Stars](https://img.shields.io/github/stars/ske-labs/trading-skills?style=social)](https://github.com/ske-company/trading-skills)
 
 ---
 
-## 🎯 What Are Trading Skills?
+## About This Repository
 
 Trading skills are structured knowledge modules that teach AI agents how to:
 
@@ -20,11 +17,19 @@ Trading skills are structured knowledge modules that teach AI agents how to:
 - **Calculate** position sizes and manage risk
 - **Generate** trading signals with proper entry/exit strategies
 
-Each skill is a standalone markdown file with clear instructions, formulas, and workflows that AI agents can follow.
+Each skill is a standalone markdown file with clear instructions, formulas, and workflows. Browse through these skills to get inspiration for your own or to integrate them into your trading AI.
 
 ---
 
-## 📁 Skill Categories
+## Skill Sets
+
+| Directory                  | Description                           |
+| -------------------------- | ------------------------------------- |
+| [**./skills**](skills)     | 50 trading skills across 7 categories |
+| [**./spec**](spec)         | The Trading Skills specification      |
+| [**./template**](template) | Skill template for contributors       |
+
+### Skill Categories
 
 | Category                                                | Skills | Description                                                  |
 | ------------------------------------------------------- | ------ | ------------------------------------------------------------ |
@@ -38,7 +43,7 @@ Each skill is a standalone markdown file with clear instructions, formulas, and 
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Using with Embient.ai
 
@@ -49,8 +54,6 @@ Each skill is a standalone markdown file with clear instructions, formulas, and 
 
 ### Using with Other AI Agents
 
-These skills work with any AI coding agent that supports the skills format:
-
 | Agent            | Setup                              |
 | ---------------- | ---------------------------------- |
 | **Claude Code**  | Add to `.claude/skills/` directory |
@@ -59,115 +62,82 @@ These skills work with any AI coding agent that supports the skills format:
 | **Other agents** | Point to the `skills/` folder      |
 
 ```bash
-git clone https://github.com/ske-company/trading-skills.git
-# Copy skills to your agent's skills directory
+git clone https://github.com/ske-labs/trading-skills.git
 cp -r trading-skills/skills/* .agent/skills/
 ```
 
-Each skill follows a consistent structure in `SKILL.md`:
+---
+
+## Creating a Trading Skill
+
+Skills are simple to create—just a folder with a `SKILL.md` file:
 
 ```yaml
 ---
-name: skill-name
-description: When to use this skill
----
-# Skill Title
-[Detailed instructions, formulas, workflows]
-```
-
+name: my-skill-name
+description: A clear description of what this skill does and when to use it.
 ---
 
-## 📚 Featured Skills
+# My Skill Name
 
-### ICT/Smart Money Concepts
+[Add your instructions here]
 
-- **Order Blocks** — Institutional buy/sell zones for high-probability entries
-- **Fair Value Gaps** — Imbalances in price for retracement targets
-- **Liquidity Zones** — Where stop losses cluster for smart money sweeps
-- **Market Structure Shift** — Trend reversal confirmation signals
-
-### Risk Management
-
-- **Position Sizing** — Fixed %, ATR-based, and Kelly criterion methods
-- **Stop Loss Strategies** — Technical, volatility, and time-based stops
-- **Drawdown Management** — Recovery protocols and loss limits
-
-### Technical Strategies
-
-- **Fibonacci Trading** — Retracements and extensions for entries/targets
-- **Multi-Timeframe Analysis** — HTF bias with LTF precision entries
-- **VWAP Trading** — Volume-weighted levels for intraday trading
-
----
-
-## 📝 Skill Format
-
-> **Inspired by [Claude Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)** — structured knowledge modules that extend AI agent capabilities.
-
-Each skill follows this structure:
-
-```markdown
----
-name: skill-identifier
-description: Brief description for skill selection
----
-
-# Skill Title
-
-## Identification / Setup
-
-How to identify the pattern or setup
+## Identification
+How to identify the setup
 
 ## Entry Strategy
-
-Step-by-step entry workflow
+Step-by-step workflow
 
 ## Risk Management
-
-Stop loss and position sizing rules
-
-## Best Practices
-
-Do's and don'ts
+Stop loss and sizing rules
 ```
+
+The frontmatter requires only two fields:
+
+| Field         | Description                                                     |
+| ------------- | --------------------------------------------------------------- |
+| `name`        | Unique identifier (lowercase, hyphens for spaces)               |
+| `description` | What the skill does **and when to use it** (trigger conditions) |
+
+Use the [template](template/SKILL.md) as a starting point. See the [spec](spec/README.md) for detailed guidelines.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! To add a new skill:
 
 1. **Fork** this repository
 2. **Create** a new folder under the appropriate category
-3. **Add** a `SKILL.md` file following the format above
+3. **Copy** [template/SKILL.md](template/SKILL.md) and fill in your content
 4. **Submit** a pull request
 
 ### Skill Guidelines
 
 - Keep skills focused on a single concept
 - Include practical workflows, not just theory
-- Add tables for quick reference
-- Provide specific parameters (percentages, pip values, etc.)
+- Add tables for quick reference (levels, parameters)
+- Provide specific values (percentages, pip values, ratios)
 
 ---
 
-## 🔗 Related Links
+## Related Links
 
 - **Embient Platform**: [embient.ai](https://embient.ai)
-- **More Skills**: Browse the full marketplace at [embient.ai/marketplace](https://embient.ai/marketplace)
+- **Skills Marketplace**: [embient.ai/marketplace](https://embient.ai/marketplace)
 - **Documentation**: [docs.embient.ai](https://docs.embient.ai)
 
 ---
 
-## 📄 License
+## Disclaimer
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+These skills are provided for demonstration and educational purposes only. Trading involves substantial risk of loss. Past performance is not indicative of future results. Always do your own research and consider consulting a financial advisor before trading.
 
 ---
 
-## ⚠️ Disclaimer
+## License
 
-These skills are for educational purposes only. Trading involves substantial risk of loss. Past performance is not indicative of future results. Always do your own research and consider consulting a financial advisor before trading.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
 

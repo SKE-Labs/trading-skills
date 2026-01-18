@@ -1,6 +1,10 @@
 ---
 name: fibonacci-trading
 description: Use Fibonacci retracement and extension for entries and targets. Use when finding pullback entries, setting profit targets, or identifying key reversal levels.
+license: Apache-2.0
+metadata:
+  author: ske-labs
+  version: "1.0"
 ---
 
 # Fibonacci Trading
@@ -70,6 +74,14 @@ Best Fibonacci trades have confluence:
 3. Mark key levels using `draw_on_chart`
 4. Wait for price to reach levels
 5. Enter with confirmation
+
+### Script
+
+Alternatively, run the bundled script:
+
+```bash
+python scripts/calculate_fibonacci.py --high 150 --low 100 --direction bullish
+```
 
 ## Best Practices
 
