@@ -1,6 +1,10 @@
 ---
 name: position-sizing
 description: Calculate risk-based position sizes using fixed %, Kelly criterion, or volatility. Use when determining trade size, managing account risk, or standardizing risk across trades.
+license: Apache-2.0
+metadata:
+  author: ske-labs
+  version: "1.0"
 ---
 
 # Position Sizing
@@ -75,6 +79,14 @@ The tool automatically calculates:
 - Position quantity
 - Capital allocation
 - Recommended leverage
+
+### Script
+
+Alternatively, run the bundled script:
+
+```bash
+python scripts/calculate_position.py --balance 10000 --risk 1 --entry 100 --stop 95
+```
 
 ## Risk Rules
 
