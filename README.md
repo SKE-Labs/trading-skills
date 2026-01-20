@@ -1,4 +1,4 @@
-# 📈 Trading Skills for Agentic AI
+# 📈 Agent Trading Skills
 
 A curated collection of **50 trading skills** designed for AI agents. Built for [Embient.ai](https://embient.ai), but compatible with any agent that supports skills—including **Claude Code**, **Antigravity**, **Cursor**, and more.
 
